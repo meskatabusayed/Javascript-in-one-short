@@ -8,7 +8,21 @@ console.log(typeof p);
 => 6. javascript is a dynamic typing.
 => 7. Data type -> (primitive ) - number , string , Boolean , undefined , null -> (non-primitive) - object , array , function
 => 8. toFixed() 
-=> 9.   
+=> 9. "indexof" in array
+=> 10. push , pop method in array
+=> 11. multiple conditions - && , || , !
+=> 12. if-else if - else
+=> 13. while loop
+=> 14. for loop
+=> 15. display every element of an array
+=> 16. break , continue statement
+=> 17. reverse way to use for and while loop
+=> 18. slice method : slice(start index , end index) - work as a index
+=> 19. includes() method - value ause kina cheeck koree -- return true of false
+=> 20. string is immutable.
+=> 21. subString(start index , end index) method - string ar jonno kaj kore..
+=> 22. block of code is called function
+=> 23. 
 */
 
 //### : Milestone - 4 : Hello Javascript
