@@ -131,7 +131,13 @@ var temparature = 38;
  //UserHomeAddress ->//pascal case
  //* keywords are case sensitive
 
- //#16.6 : 
+ //#16.6 : simple Mathematical operations in javascript
+ //* vscode ar terminal a javascript ar code run korte chailee command -> node fileName --> ex. node mm.js
+ var onionPrice = 20;
+ var eggprice = 10;
+ var totalPrice = onionPrice + eggprice;
+//  console.log(totalPrice);
+
 
 
 
