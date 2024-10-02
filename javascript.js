@@ -1,3 +1,16 @@
+/* ***Important Tolic : sometimes revision it :.....
+=> 1. What is Javascrip?
+=> 2. definition of variabel
+=> 3. parseInt()
+=> 4. parseFloat()
+=> 5. type finding : var p = 20 ; 
+console.log(typeof p);
+=> 6. javascript is a dynamic typing.
+=> 7. Data type -> (primitive ) - number , string , Boolean , undefined , null -> (non-primitive) - object , array , function
+=> 8. toFixed() 
+=> 9.   
+*/
+
 //### : Milestone - 4 : Hello Javascript
 //## Module 16 .1 : Introduction to javascript
 //Q1 : What is Javascript ?
@@ -51,5 +64,38 @@
 */
 
 //#16.3 : what is variable , Five things you need to declare A Variable
+ 
+//->Variable : A variable is a value that can change depending on conditions of on information passed to the programming.
+
+var a = 20;
+let b = 3;
+const name = "Meskat";
+
+//* Declare variable
+//Variable Name : Variables must be identified with unique names.
+//Assignment Operator : "=" use an assignment operator to assign a values
+//value : Specifies the value to assign to the variable
+var price = 349;
+//-> use a semicolone to indicate the end of var statement.
+//* tips : A variable declared without a value will have the value undefined.
+var age = 23;
+var temparature = 38;
+
+//#16.4 : variable type , Numeric , string , boolean : -
+
+ var person = "ali";
+ var location = "kushtia";
+
+ /* string data types : Zero or more characters written inside quotes. 
+ \ string = dori
+ */
+
+/* Numeric data types : Numbers can be written with or without decimals and without quotes. */
+/*  */
+
+
+
+
+
 
 
