@@ -27,7 +27,15 @@ console.log(typeof p);
 => 25. Object.keys() , Object.values() - give array
 => 26. get and set property values in object
 => 27. Objects.entries() method - provide all property names and values
-=> 28. 
+=> 28. toLowerCase() and toUpperCase()
+=> 29. startwith() and endswith()
+=> 30. split() method - 
+=> 31. join() method
+=> 32. Math.pow() , Math.abs(), Math.round() , Math.ceil() , Math.floor() , Math.random() , swap variable 
+=> 33. isArray() method - check array or not
+=> 34. concat() - join 2 array or string
+=> 35. splice(start remove index , end remove index , step) method - use remove element; also change this array
+=> 36.  
 */
 
 //### : Milestone - 4 : Hello Javascript
@@ -110,7 +118,20 @@ var temparature = 38;
  */
 
 /* Numeric data types : Numbers can be written with or without decimals and without quotes. */
-/*  */
+/* Boolean Data types :- It can inly take the values true or false and written without quotes. 0 -> false , 1 -> true */
+/* How to declare a variable
+         keyword variableName = value
+*/
+/* Data types : The five most basic types of data are string , numbers , boolean , undefined and null */
+
+//#16.5 : Javascript , keyword , variable Name , Naming convention :
+//* Naming convention :
+ //user_home_address ->//snake case
+ //userHomeAddress -> //camel case
+ //UserHomeAddress ->//pascal case
+ //* keywords are case sensitive
+
+ //#16.6 : 
 
 
 

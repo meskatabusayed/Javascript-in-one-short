@@ -23,3 +23,29 @@ for(let i = 0; i < keys.length ; i++){
     // console.log(keys[i]);
 }
 
+//split
+const lyrics = "I am a Bandladeshi";
+const parts = lyrics.split("a");
+// console.log(parts);
+
+//join
+const lines = ["I am" , "I go"];
+const newLines = lines.join(" ");
+// console.log(newLines);
+
+//swap variable
+//approach 1
+let first = 23;
+let second = 24;
+// let temp = first;
+// first = second;
+// second = temp;
+// console.log(first , second);
+//approch 2
+[first , second] = [second , first] 
+// console.log(first , second);
+
+//splice
+const count = [23 , 45, 55, 67, 54 , 2, 3, 4, 4, 6];
+console.log(count.splice(2 , 5 , 2));
+console.log(count);
