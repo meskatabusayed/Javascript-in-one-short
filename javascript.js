@@ -22,7 +22,12 @@ console.log(typeof p);
 => 20. string is immutable.
 => 21. subString(start index , end index) method - string ar jonno kaj kore..
 => 22. block of code is called function
-=> 23. 
+=> 23. function declaration , function invocation/call , return from a function
+=> 24. Objects - key : value
+=> 25. Object.keys() , Object.values() - give array
+=> 26. get and set property values in object
+=> 27. Objects.entries() method - provide all property names and values
+=> 28. 
 */
 
 //### : Milestone - 4 : Hello Javascript
