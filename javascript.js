@@ -139,6 +139,86 @@ var temparature = 38;
 //  console.log(totalPrice);
 
 
+/* Important Topic of Milestone 6 */
+//let : allow it to reassign
+//const : do not allow it to reassign
+//* const normally use korle error dibe but array declare kore array ar moddhe change korle / push korle error dibe na....
+const arr = [23, 45, 67, 89];
+arr[2] = 11;
+arr.push(44);
+// console.log(arr);
+//* same as Object - vitore vitore change kore...
+const obj = {
+    name : "Meskat",
+    age : 21,
+    university : "BWU"
+}
+obj.name = "Abu Sayed"
+obj.age = 19
+// console.log(obj);
+//loop :- 
+for(let i = 0; i<10 ; i++){
+    // console.log(i)
+}
+//** akhanee jodi ami let ar jaigai const likhi tahole error dibe....
+//* Template literals
+//* Arrow functons
+/* ### Milestone 6 : Intermediate Javascript , Api :-  */
+/* ## Module 30 : Js Recape and Basic ES6 , ES5 : - */
+/* 30-1 : ES6 Intro difference between let , var , const : -  */
+/* 30-2 : Function default paramater for not provided values:  */
+/*---> */  
+//1.number function
+function add(num1 = 0 , num2 = 0){
+    return num1 + num2}
+//2.string function
+function fullName(f_name = " " , l_name = " "){
+        return f_name + " " + l_name
+    }
+//3.array function
+function array(fiveCountryName = ["bd"]){
+        return fiveCountryName;
+}
+    const countryArray = array();
+    // console.log(countryArray);
+//4.object function : 
+function obj(person = {}){
+    return obj;
+}
+
+/* 30-3 : Template string , multiple line string , dynamic string */
+//Template Literals : - Template Literals are enclosed by (``)  backtick characters instead of double or single quotes , allowing for the following : 1. milti-line string , 2. string interpolation - (which are strings delimited by backticks (``) instead of single or double quotes.)
+
+const yourName = "Meskat";
+const age = 21;
+// console.log(`Hey your name is ${yourName} and Your age is ${age}`);
+
+/* 30-4 : Arrow function , multiple parameter, function body : - */
+
+//function declaration
+function add(num1 , num2){
+    return num1+num2;
+
+}
+//function expression : In JavaScript, a function expression is a way to define a function as a value or as part of another expression. It's different from a function declaration, which creates a named function in the current scope.Key Points: 1. Anonymous: Function expressions can be anonymous, meaning they don't have a name. 2. Assignment: They are often assigned to a variable, allowing you to use the variable to call the function. 3. Hoisting: Unlike function declarations, function expressions are not hoisted, meaning they cannot be used before they are defined in the code.
+
+const fullName = function yourName(f_name , l_name){
+    return f_name + " " + l_name;
+}
+
+//arrow function : arrow function is one of the feature introduced es6 version of javascript. It allows to create functions in a cleaner way compared to regular functions.
+const newFunction = (a , b , c) => {
+    return a+b+c;
+
+}
+
+/* 30-5 : More Arrow functions and big arrow function:- */
+
+
+
+
+
+
 
 
 
