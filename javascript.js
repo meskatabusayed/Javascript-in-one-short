@@ -213,6 +213,44 @@ const newFunction = (a , b , c) => {
 }
 
 /* 30-5 : More Arrow functions and big arrow function:- */
+//1
+const difference = (x , y) => x-y;
+//2
+const multiply = (first , second , third) => first*second*third;
+//single parameter
+//3
+const getAge = (person) => person.age;
+const student = {name : "a" , age : 21};
+const age = getAge(student);
+// console.log(age)
+//4
+const getThird = numbers => numbers[2];
+const third = getThird([5, 4, 23, 222]);
+// console.log(third);
+//no parameter
+//5
+const getPI = () => Math.PI;
+console.log(getPI());
+
+//large arrow function
+const doMath = (x,y,z) => {
+    const sum = x+y+z;
+    const mult = x*y*z;
+    const result = sum + mult;
+    return result;
+}
+
+//Q : difference between arrow function and regular function?
+//Ans : Arrow functions and regular functions in JavaScript have several key differences:
+//1. 
+//syntax : 
+//Arrow Functions: They have a more concise syntax and do not require the function keyword.
+const add = (a, b) => a + b;
+//Regular Functions: They use the function keyword and can have a more traditional syntax.
+function add(a, b) {
+    return a + b;
+}
+
 
 
 
