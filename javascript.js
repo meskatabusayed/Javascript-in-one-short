@@ -133,9 +133,9 @@ var temparature = 38;
 
  //#16.6 : simple Mathematical operations in javascript
  //* vscode ar terminal a javascript ar code run korte chailee command -> node fileName --> ex. node mm.js
- var onionPrice = 20;
- var eggprice = 10;
- var totalPrice = onionPrice + eggprice;
+//  var onionPrice = 20;
+//  var eggprice = 10;
+//  var totalPrice = onionPrice + eggprice;
 //  console.log(totalPrice);
 
 
@@ -143,63 +143,66 @@ var temparature = 38;
 //let : allow it to reassign
 //const : do not allow it to reassign
 //* const normally use korle error dibe but array declare kore array ar moddhe change korle / push korle error dibe na....
-const arr = [23, 45, 67, 89];
-arr[2] = 11;
-arr.push(44);
+//const arr = [23, 45, 67, 89];
+//arr[2] = 11;
+//arr.push(44);
 // console.log(arr);
 //* same as Object - vitore vitore change kore...
-const obj = {
-    name : "Meskat",
-    age : 21,
-    university : "BWU"
-}
-obj.name = "Abu Sayed"
-obj.age = 19
+// const obj = {
+//     name : "Meskat",
+//     age : 21,
+//     university : "BWU"
+// }
+// obj.name = "Abu Sayed"
+// obj.age = 19
 // console.log(obj);
 //loop :- 
-for(let i = 0; i<10 ; i++){
+//for(let i = 0; i<10 ; i++){
     // console.log(i)
-}
+//}
 //** akhanee jodi ami let ar jaigai const likhi tahole error dibe....
 //* Template literals
 //* Arrow functons
+//* spread operator
+
+
 /* ### Milestone 6 : Intermediate Javascript , Api :-  */
 /* ## Module 30 : Js Recape and Basic ES6 , ES5 : - */
 /* 30-1 : ES6 Intro difference between let , var , const : -  */
 /* 30-2 : Function default paramater for not provided values:  */
 /*---> */  
 //1.number function
-function add(num1 = 0 , num2 = 0){
-    return num1 + num2}
+// function add(num1 = 0 , num2 = 0){
+//     return num1 + num2}
 //2.string function
-function fullName(f_name = " " , l_name = " "){
-        return f_name + " " + l_name
-    }
+// function fullName(f_name = " " , l_name = " "){
+//         return f_name + " " + l_name
+//     }
 //3.array function
-function array(fiveCountryName = ["bd"]){
-        return fiveCountryName;
-}
-    const countryArray = array();
+// function array(fiveCountryName = ["bd"]){
+//         return fiveCountryName;
+// }
+//     const countryArray = array();
     // console.log(countryArray);
 //4.object function : 
-function obj(person = {}){
-    return obj;
-}
+// function obj(person = {}){
+//     return obj;
+// }
 
 /* 30-3 : Template string , multiple line string , dynamic string */
 //Template Literals : - Template Literals are enclosed by (``)  backtick characters instead of double or single quotes , allowing for the following : 1. milti-line string , 2. string interpolation - (which are strings delimited by backticks (``) instead of single or double quotes.)
 
-const yourName = "Meskat";
-const age = 21;
+// const yourName = "Meskat";
+// const age = 21;
 // console.log(`Hey your name is ${yourName} and Your age is ${age}`);
 
 /* 30-4 : Arrow function , multiple parameter, function body : - */
 
 //function declaration
-function add(num1 , num2){
-    return num1+num2;
+// function add(num1 , num2){
+//     return num1+num2;
 
-}
+// }
 //function expression : In JavaScript, a function expression is a way to define a function as a value or as part of another expression. It's different from a function declaration, which creates a named function in the current scope.Key Points: 1. Anonymous: Function expressions can be anonymous, meaning they don't have a name. 2. Assignment: They are often assigned to a variable, allowing you to use the variable to call the function. 3. Hoisting: Unlike function declarations, function expressions are not hoisted, meaning they cannot be used before they are defined in the code.
 
 const fullName = function yourName(f_name , l_name){
@@ -219,41 +222,79 @@ const difference = (x , y) => x-y;
 const multiply = (first , second , third) => first*second*third;
 //single parameter
 //3
-const getAge = (person) => person.age;
-const student = {name : "a" , age : 21};
-const age = getAge(student);
+// const getAge = (person) => person.age;
+// const student = {name : "a" , age : 21};
+// const age = getAge(student);
 // console.log(age)
 //4
-const getThird = numbers => numbers[2];
-const third = getThird([5, 4, 23, 222]);
+// const getThird = numbers => numbers[2];
+// const third = getThird([5, 4, 23, 222]);
 // console.log(third);
 //no parameter
 //5
-const getPI = () => Math.PI;
-console.log(getPI());
+// const getPI = () => Math.PI;
+// console.log(getPI());
 
 //large arrow function
-const doMath = (x,y,z) => {
-    const sum = x+y+z;
-    const mult = x*y*z;
-    const result = sum + mult;
-    return result;
-}
+// const doMath = (x,y,z) => {
+//     const sum = x+y+z;
+//     const mult = x*y*z;
+//     const result = sum + mult;
+//     return result;
+// }
 
 //Q : difference between arrow function and regular function?
 //Ans : Arrow functions and regular functions in JavaScript have several key differences:
 //1. 
 //syntax : 
 //Arrow Functions: They have a more concise syntax and do not require the function keyword.
-const add = (a, b) => a + b;
+// const add = (a, b) => a + b;
 //Regular Functions: They use the function keyword and can have a more traditional syntax.
-function add(a, b) {
-    return a + b;
-}
+// function add(a, b) {
+//     return a + b;
+// }
+
+/*30-6 :  Spread operator , array max , copy arrays */
+//* non-primitive data type -> array , object ara referance dhore rakhe..
+//spread operator : The javascript spread operator(...) allows us to quickly copy all or part of the array or object into another array or object.
+const normalArray = ["aa" , "mm" , "ss"];
+// console.log(normalArray);
+// const spread = ["ee" , ...normalArray];
+// console.log(...normalArray);
+
+//* Math.max() : The Math.max() method returns the number will the hightest value.
+
+let numberArr = [1, 2, 3, 45 , 67]
+// console.log(Math.max(...numberArr));
+
+//* How to copy an array?
+
+let numbers = [3, 4, 5];
+let allNumbers = [1, 2, ...numbers , 6, 7, 8];
+// console.log(allNumbers);
+
+//1. 
+const max = Math.max(23 , 32 , 44, 1);
+// console.log(max);
+
+//*use spread operator to copy:
+
+//-> 
+const friends = ["Rahim" , "karim" , "Abdul"];
+const bondhu = friends;
+const dosto = [...friends] //copy
+// console.log(dosto);
+friends.push(100);
+// console.log(dosto);
+// console.log(friends);
 
 
+//*advanced
+const sonkha = [...friends , 99] //add extra elements while copy;
 
+/* 30-7 : (advanced) Object and array destructur  */
 
+//*
 
 
 
