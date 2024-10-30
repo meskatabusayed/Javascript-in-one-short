@@ -94,24 +94,24 @@ console.log(typeof p);
  
 //->Variable : A variable is a value that can change depending on conditions of on information passed to the programming.
 
-var a = 20;
-let b = 3;
-const name = "Meskat";
+// var a = 20;
+// let b = 3;
+// const name = "Meskat";
 
 //* Declare variable
 //Variable Name : Variables must be identified with unique names.
 //Assignment Operator : "=" use an assignment operator to assign a values
 //value : Specifies the value to assign to the variable
-var price = 349;
+// var price = 349;
 //-> use a semicolone to indicate the end of var statement.
 //* tips : A variable declared without a value will have the value undefined.
-var age = 23;
-var temparature = 38;
+// var age = 23;
+// var temparature = 38;
 
 //#16.4 : variable type , Numeric , string , boolean : -
 
- var person = "ali";
- var location = "kushtia";
+//  var person = "ali";
+//  var location = "kushtia";
 
  /* string data types : Zero or more characters written inside quotes. 
  \ string = dori
@@ -205,21 +205,21 @@ var temparature = 38;
 // }
 //function expression : In JavaScript, a function expression is a way to define a function as a value or as part of another expression. It's different from a function declaration, which creates a named function in the current scope.Key Points: 1. Anonymous: Function expressions can be anonymous, meaning they don't have a name. 2. Assignment: They are often assigned to a variable, allowing you to use the variable to call the function. 3. Hoisting: Unlike function declarations, function expressions are not hoisted, meaning they cannot be used before they are defined in the code.
 
-const fullName = function yourName(f_name , l_name){
-    return f_name + " " + l_name;
-}
+// const fullName = function yourName(f_name , l_name){
+//     return f_name + " " + l_name;
+// }
 
 //arrow function : arrow function is one of the feature introduced es6 version of javascript. It allows to create functions in a cleaner way compared to regular functions.
-const newFunction = (a , b , c) => {
-    return a+b+c;
+// const newFunction = (a , b , c) => {
+//     return a+b+c;
 
-}
+// }
 
 /* 30-5 : More Arrow functions and big arrow function:- */
 //1
-const difference = (x , y) => x-y;
+//const difference = (x , y) => x-y;
 //2
-const multiply = (first , second , third) => first*second*third;
+//const multiply = (first , second , third) => first*second*third;
 //single parameter
 //3
 // const getAge = (person) => person.age;
@@ -257,44 +257,95 @@ const multiply = (first , second , third) => first*second*third;
 /*30-6 :  Spread operator , array max , copy arrays */
 //* non-primitive data type -> array , object ara referance dhore rakhe..
 //spread operator : The javascript spread operator(...) allows us to quickly copy all or part of the array or object into another array or object.
-const normalArray = ["aa" , "mm" , "ss"];
+//const normalArray = ["aa" , "mm" , "ss"];
 // console.log(normalArray);
 // const spread = ["ee" , ...normalArray];
 // console.log(...normalArray);
 
 //* Math.max() : The Math.max() method returns the number will the hightest value.
 
-let numberArr = [1, 2, 3, 45 , 67]
+//let numberArr = [1, 2, 3, 45 , 67]
 // console.log(Math.max(...numberArr));
 
 //* How to copy an array?
 
-let numbers = [3, 4, 5];
-let allNumbers = [1, 2, ...numbers , 6, 7, 8];
+//let numbers = [3, 4, 5];
+//let allNumbers = [1, 2, ...numbers , 6, 7, 8];
 // console.log(allNumbers);
 
 //1. 
-const max = Math.max(23 , 32 , 44, 1);
+//const max = Math.max(23 , 32 , 44, 1);
 // console.log(max);
 
 //*use spread operator to copy:
 
 //-> 
-const friends = ["Rahim" , "karim" , "Abdul"];
-const bondhu = friends;
-const dosto = [...friends] //copy
+//const friends = ["Rahim" , "karim" , "Abdul"];
+//const bondhu = friends;
+///const dosto = [...friends] //copy
 // console.log(dosto);
-friends.push(100);
+// friends.push(100);
 // console.log(dosto);
 // console.log(friends);
 
 
 //*advanced
-const sonkha = [...friends , 99] //add extra elements while copy;
+//const sonkha = [...friends , 99] //add extra elements while copy;
 
 /* 30-7 : (advanced) Object and array destructur  */
 
-//*
+//* Object Destructuring:-
+// const SiteUser = {
+//     UserName : "Meskat",
+//     UserAge : 21,
+//     email : "m@gmail.com"
+// }
+
+// const {UserName , UserAge : age(atake alise bolee) } = SiteUser;
+// console.log(UserName , UserAge);
+
+//* Array Destructuring
+
+// const bookArray = [23, 45, 57, 34, 23, 56];
+//*skiping items in an array
+// const [num1 , ,  num3 ] = bookArray;
+// console.log(num1 , num3);
+
+//*Assign variables with a default value;
+// let n1 , n2, n3;
+// [n1 = 99 , n2= 98, n3 = 87] = [100 , 333]
+// console.log(n1 , n2 , n3);
+
+//*swiping values
+//let num1 = 23;
+//let num2 = 22;
+//[num2, num1] = [num1 , num2]; //swap
+// console.log(num1 , num2);
+
+//*descructuring with function
+// function arrFunc () {
+//     return [1, 2, 3, 4]
+// }
+// const [arr1 , arr2 , arr3] = arrFunc();
+// console.log(arr1 , arr2 , arr3);
+
+//* advanced function descructuring with array
+
+// function desFunc(a, b){
+//     return [a*2 , b*2];
+// }
+
+// const [v1 , v2] = desFunc(2, 3);
+// console.log(v1 , v2);
+
+//*Advanced function destructuring with object
+
+// const objFunc = (email , password) => {
+//     return {email , password};
+// }
+
+// const {email , password} = objFunc("meskat" , "ms@gmail.com");
+// console.log(email , password);
 
 
 
