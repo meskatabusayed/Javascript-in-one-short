@@ -47,5 +47,6 @@ let second = 24;
 
 //splice
 const count = [23 , 45, 55, 67, 54 , 2, 3, 4, 4, 6];
-console.log(count.splice(2 , 5 , 2));
-console.log(count);
+// console.log(count.splice(2 , 5 , 2));
+// console.log(count);
+

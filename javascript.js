@@ -139,7 +139,12 @@ console.log(typeof p);
 //  console.log(totalPrice);
 
 
+
+
+
 /* Important Topic of Milestone 6 */
+
+
 //let : allow it to reassign
 //const : do not allow it to reassign
 //* const normally use korle error dibe but array declare kore array ar moddhe change korle / push korle error dibe na....
@@ -167,8 +172,37 @@ console.log(typeof p);
 
 
 /* ### Milestone 6 : Intermediate Javascript , Api :-  */
+
+
+
+
 /* ## Module 30 : Js Recape and Basic ES6 , ES5 : - */
 /* 30-1 : ES6 Intro difference between let , var , const : -  */
+//var : no reason to use var
+//let : allow it to reassign
+//const : do not allow it to reassign
+
+//* const normaly use korle error dibe but array declare koree array ar modhe change korle / push korle error dibe na.
+// const numbers = [23, 3, 4 , 12];
+// numbers[1] = 65;
+// numbers.push(8, 9, 0);
+// console.log(numbers);
+//* same as object -> vitore vitore change
+// const student = {
+//     name : "Rahim",
+//     class : 12
+// }
+// student.name = "mm";
+// console.log(student);
+
+//loop
+// for(let i = 0; i<10 ; i++){
+//     console.log(i);
+//     //akhena "let" ar jaigai jodi "const" dauwa hoi tahole error dibe.karon value change korte parbe na...
+
+// }
+
+
 /* 30-2 : Function default paramater for not provided values:  */
 /*---> */  
 //1.number function
@@ -346,6 +380,91 @@ console.log(typeof p);
 
 // const {email , password} = objFunc("meskat" , "ms@gmail.com");
 // console.log(email , password);
+
+/* 30-8 : Keys , values , entries , delete , seal , freeze */
+
+const laptop = {
+    name : "Laptop",
+    price : 21000,
+    company : "HP"
+}
+//object.keys()
+const keys = Object.keys(laptop);
+//Object.values()
+const values = Object.values(laptop);
+//Object.entries()
+const entire = Object.entries(laptop);
+// console.log(entire);
+//delete
+// delete laptop.name;
+//object spread with delete
+const {name , ...shortLaptop} = laptop;
+// console.log("3" , shortLaptop);
+
+laptop.processor = "intel";
+// console.log(laptop);
+//freeze()
+// Object.freeze(laptop);
+laptop.processModel = "i5";
+// console.log("37" , laptop);
+//seal()
+Object.seal(laptop);
+// console.log("37" , laptop);
+
+
+/*1. Object.keys() -> returns all the keys of Object as array
+2. Objects.values() -> returns an array of values
+3. Objects.entries() -> returns an array of [key , value] pairs
+4. ways to delete/remove object property :
+   ->1. delete Object.property
+   ->2. Remove a property using rest syntex :
+     ---- const {property , ...rest} = Object
+5. Object.freeze()
+ -> Prevents changing the existed properties of an object.
+ -> Doesn't allow removing the existing properties
+ -> Prevents adding new properties
+ -> Properties of child objects can be modified.
+6.Objects.seal()
+ -> Allows changing existing properties of an object
+ -> Prevents adding new properties
+ -> Don't allow removing the existing properties
+ 
+ 7. Object.freeze() vs Object.seal();
+
+*/
+
+
+/* 30-9 : For of , for in , Module summary and practise problem : */
+
+//*for of
+
+//for of : use on array or string not in object.
+
+// const numbers = [23, 21, 45, 67];
+// for(const num of numbers){
+//     // console.log(num);
+// }
+
+// const countryName = "Bangladesh";
+// for(const country of countryName){
+//     // console.log(country);
+// }
+
+//for in : 
+//for in : use on object:
+
+// const glass = {
+//     name : "glass",
+//     color : "golden",
+//     price : 21000
+// }
+
+// for(const key in glass){
+//     const value = glass[key]; //akhanee dot(.) diye access kora jai na...
+//     console.log(key , ":"  , value);
+// }
+
+
 
 
 
