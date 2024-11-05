@@ -50,3 +50,25 @@ const count = [23 , 45, 55, 67, 54 , 2, 3, 4, 4, 6];
 // console.log(count.splice(2 , 5 , 2));
 // console.log(count);
 
+/* M6 : Problem solving part : */
+//1.
+/* const multiplyFunc = (num1 , num2, num3) => num1*num2*num3;
+const result = multiplyFunc(2,2, 4);
+console.log(result); */
+//2. 
+
+/* const multlines = `
+I am a developer.
+I love to code.
+I love to eat biriyani
+`;
+
+console.log(multlines); */
+
+//3.
+/* const addFunc = (num , num1 = 40) => {
+    return num + num1;
+}
+
+console.log(addFunc(34));
+ */

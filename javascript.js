@@ -474,3 +474,5 @@ Object.seal(laptop);
 
 
 
+
+
