@@ -115,6 +115,189 @@ for(let i = 0; i < numArr2.length; i++){
 
 
 //***5. Function :
+//Q1 : 1. What is the difference between a function declaration and a function expression in JavaScript?
+/*  ***Function Declaration
+A function declaration defines a named function using the function keyword.
+function greet() {
+  console.log("Hello!");
+}
+✅ Key Points:
+Hoisted: Function declarations are hoisted to the top of their scope, so they can be called before they are defined in the code.
+
+sayHi(); // ✅ Works, due to hoisting
+
+function sayHi() {
+  console.log("Hi there!");
+} */
+
+/*   ***Function Expression
+A function expression involves assigning a function (anonymous or named) to a variable.
+const greet = function () {
+  console.log("Hello!");
+};
+
+✅ Key Points:
+Not hoisted: Function expressions are not hoisted, so they cannot be used before they are defined.
+
+Can be anonymous or named (though anonymous is more common).
+
+sayHi(); // ❌ Error: Cannot access 'sayHi' before initialization
+
+const sayHi = function () {
+  console.log("Hi there!");
+}; */
+
+// Q2 : What will the following code output and why?
+// function sayHi() {
+//   console.log("Hi");
+// }
+
+// var result = sayHi();
+// console.log(result);.
+
+/* 
+🔍 What happens:
+The function sayHi() is defined.
+
+Then it's called with sayHi():
+
+This executes the function body:
+→ console.log("Hi");
+→ So "Hi" is printed.
+
+The return value of sayHi() is assigned to the variable result.
+
+Since there is no return statement, the function returns undefined by default.
+
+Then console.log(result); prints undefined.
+✅ Final Output:
+Hi
+undefined
+
+💡 Why?
+Because:
+
+"Hi" is printed inside the function when it's called.
+
+undefined is printed because the function does not return any value, so the result variable holds undefined.
+
+*/
+
+
+//Q3 : Write a JavaScript function named isEven that takes a number as a parameter and returns true if the number is even, otherwise returns false.
+
+/* function isEven(num){
+    if(num % 2 === 0){
+        return true;
+
+    }
+    else{
+        return false;
+    }
+
+}
+
+console.log(isEven(2)); */
+
+//Q4 : 4. What is a callback function in JavaScript?(Give an example where a callback function is used.)
+
+/* 
+A callback function is a function passed as an argument to another function, which is then invoked (called) inside that function to complete some kind of routine or action.
+🔹 Why use callbacks?
+a. To ensure that a certain code executes only after another task is completed.
+b. Commonly used in asynchronous operations like API calls, file reading, or timers
+
+🔸 Example: Using a Callback in a Function
+function greet(name, callback) {
+  console.log("Hi " + name);
+  callback();
+}
+
+function sayBye() {
+  console.log("Bye!");
+}
+
+greet("Sayed", sayBye);
+✅ Output:
+Hi Sayed
+Bye!
+
+🔍 Explanation:
+a. greet takes two arguments: a string name and a function callback.
+
+b. It prints the greeting message, and then calls the callback().
+
+c. We passed sayBye as the callback, which then gets executed inside greet.
+
+🔸 Another Example: setTimeout (Built-in callback usage)
+setTimeout(function () {
+  console.log("This runs after 2 seconds");
+}, 2000);
+Here, the anonymous function is a callback that runs after 2000ms (2 seconds).
+
+*/
+
+// Q5 : What will this code print? Explain the behavior.
+// function outer() {
+//   let count = 0;
+//   return function inner() {
+//     count++;
+//     console.log(count);
+//   };
+// }
+
+// const counter = outer();
+// counter();
+// counter();
+
+/* 
+🖨️ Output:
+1
+2
+
+🔍 Explanation:
+Let’s go step by step:
+
+1. outer() is called:
+a. Inside outer, a local variable count is initialized to 0.
+
+b. outer returns the inner function — but not executed yet.
+
+2. const counter = outer();
+a. Now, counter holds the returned inner function.
+
+b. Even though outer() finished executing, its local variable count is preserved.
+
+🔁 This is because of a concept called a closure.
+
+🔹 What is a Closure?
+A closure is when a function “remembers” the variables from its lexical (outer) scope, even after that outer function has finished executing.
+
+So inner() still has access to count, even though outer() has already returned.
+
+3. First call: counter();
+count goes from 0 → 1
+
+Output: 1
+
+4. Second call: counter();
+count goes from 1 → 2
+
+Output: 2
+
+🧠 Key Takeaways:
+a. JavaScript functions can return other functions.
+
+b. Returned inner functions keep access to variables in their outer function — even after the outer function has returned.
+
+c. This behavior is called a closure.
+
+*/
+
+
+
+
+
 //***6. Object : (3 ways to access property By name).
 
 //# 37-2 : Template String , Arrow Function , 
