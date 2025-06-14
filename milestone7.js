@@ -359,7 +359,7 @@ for (let [subject, score] of Object.entries(scores2)) {
 john_doe
 john@example.com */
 
-//# 37-2 : Template String , Arrow Function spread Operator, 
+//# 37-2 : Template String , Arrow Function , spread Operator, 
 //*** 1.Template String
 
 //Q1 : What will be the output of the following code?
@@ -407,5 +407,109 @@ console.log(result); */
 
 /* console.log(`Student ${student.name} scored ${student.scores.math} in math`); */
 
+//*** 2.Arrow Function
+
+//Q1 : Convert the following function into an arrow function:
+// function greet(name) {
+//   return "Hello, " + name;
+// }
+
+/* const greet = (name) => {
+  return "Hello, " + name;
+}
+
+const result = greet("Meskat");
+console.log(result); */
+
+//Q2 : What will be the output of the following arrow function?
+// const add = (a, b) => a + b;
+// console.log(add(3, 4));
+
+/* Output : 7 */
+
+//Q3 : Write an arrow function called sayHi that returns "Hi there!" and takes no parameters.
+/* 
+const sayHi = () => "Hi there!";
+console.log(sayHi());
+
+*/
+
+
+// Q4 : Use an arrow function with .map() to square each number in this array:
+// const numbers = [1, 2, 3, 4];
+
+/* 
+const numbers = [1, 2, 3, 4];
+
+const squared = numbers.map(num => num * num);
+
+console.log(squared); // Output: [1, 4, 9, 16]
+*/
+
+
+// Q5 : What is the output and behavior of this in the following code?
+// const person = {
+//   name: "Alice",
+//   greet: () => {
+//     console.log(`Hello, I am ${this.name}`);
+//   }
+// };
+
+// person.greet();
+
+/* 
+Hello, I am undefined
+
+🔍 Explanation:
+a. Arrow functions do not have their own this.
+
+b. Instead, they inherit this from the surrounding (lexical) scope.
+
+c. In this case, the surrounding scope is the global context, not the person object.
+
+d. In most environments, this.name in the global scope is undefined.
+
+✅ Correct way using a regular function:
+If you want this to refer to the person object, use a regular function:
+const person = {
+  name: "Alice",
+  greet() {
+    console.log(`Hello, I am ${this.name}`);
+  }
+};
+
+person.greet(); // Output: Hello, I am Alice
+
+*/
+
+
+//*** 2.Spread Operator
+//Q1 : Create a new array from an older array and add an element.
+/*  const number = [1 , 2, 3, 4];
+ const newNumber = [...number];
+ const currentNumber = [...number , 55, 56];
+ console.log(number);
+ console.log(newNumber);
+ console.log(currentNumber); */
+
+//Q2 : How can you create a shallow copy of the following array using the spread operator?
+// const numbers = [1, 2, 3];
+
+//Q3 : How can you merge the two arrays below into a single array using the spread operator?
+// const arr1 = [1, 2];
+// const arr2 = [3, 4];
+
+//Q4: Given the function below, how can you use the spread operator to pass the values of an array as arguments?
+// function sum(a, b, c) {
+//   return a + b + c;
+// }
+// const values = [2, 4, 6];
+
+//Q5: How can you use the spread operator to create a copy of the following object and change the age to 30 in the new object?
+// const user = { name: "Alice", age: 25 };
+
+//Q6: How can you combine the following two objects using the spread operator?
+// const obj1 = { a: 1, b: 2 };
+// const obj2 = { c: 3, d: 4 };
 
 
