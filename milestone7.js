@@ -68,10 +68,10 @@ console.log(lastIndex); */
 
 //***4. Loop :
 //Q1 : How can you use a for loop to print all elements of an array?
-const arr = ["Satarday" , "Sunday" , "Monday" , "Friday"];
+/* const arr = ["Satarday" , "Sunday" , "Monday" , "Friday"];
 for(let i = 0 ; i < arr.length; i++){
     console.log(arr[i]);
-}
+} */
 //Q2 : What is the difference between for, for...in, and for...of loops?
 /* 
 1. for loop :
@@ -92,22 +92,22 @@ b. Works with: Arrays, strings, sets, etc. (not plain objects).
 */
 
 //Q3: How can you loop through an array and skip certain elements using continue?
-const numArr = [34 , 67, 89];
+/* const numArr = [34 , 67, 89];
 for(let i = 0; i < numArr.length; i++){
     if(numArr[i] === 67){
         continue
     }
     console.log(numArr[i]);
-}
+} */
 
 //Q4: How can you break out of a loop when a specific condition is met?
-const numArr2 = [34 , 67, 89];
+/* const numArr2 = [34 , 67, 89];
 for(let i = 0; i < numArr2.length; i++){
     if(numArr2[i] === 67){
         break
     }
     console.log(numArr2[i]);
-}
+} */
 
 //Q5: How can you use a while loop to repeat a task until a condition becomes false?
 
@@ -299,5 +299,113 @@ c. This behavior is called a closure.
 
 
 //***6. Object : (3 ways to access property By name).
+//Q1 : How do you create an object in JavaScript with the properties name, age, and isStudent?
+/* const person = {
+  name : "Meskat",
+  age : 22,
+  isStudent : true,
+}
 
-//# 37-2 : Template String , Arrow Function , 
+console.log(person.name);
+console.log(person.age);
+console.log(person.isStudent); */
+
+//Q2 : Given the object below, how do you access the value "JavaScript"?
+// const course = {
+//   title: "JavaScript",
+//   duration: "4 weeks"
+// };
+
+/* console.log("find javascript",course.title); */
+
+// Q3 : How do you add a method greet to an object person that logs "Hello, I am [name]"?
+// const person = {
+//   name: "Alice"
+// };
+
+/* const person = {
+    name : "Meskat Mohammad Abu Sayed",
+    great : function(){
+      console.log("Hello , I am" + this.name)
+    }
+}
+
+person.great(); */
+
+// Q4: Given the object:
+// const scores = { math: 95, english: 88, science: 92 };
+// How can you loop through all the keys and values?
+
+/* //Answer way -1 : 
+const scores = { math: 95, english: 88, science: 92 };
+
+for (let subject in scores) {
+  console.log(subject + ": " + scores[subject]);
+}
+
+//Answer way - 2:
+const scores2 = { math: 95, english: 88, science: 92 };
+
+for (let [subject, score] of Object.entries(scores2)) {
+  console.log(`${subject}: ${score}`);
+} */
+
+//Q5 : What will be the output of the following code?
+// const user = { username: "john_doe", email: "john@example.com" };
+// const { username, email } = user;
+// console.log(username, email);
+
+/* //Output : 
+john_doe
+john@example.com */
+
+//# 37-2 : Template String , Arrow Function spread Operator, 
+//*** 1.Template String
+
+//Q1 : What will be the output of the following code?
+// const name = "Sayed";
+// console.log(`Hello, ${name}!`);
+
+/* Output : Hello , Sayed */
+
+//Q2 :  How do you use a template string to create a multi-line message like this?
+// Name: Sayed
+// Course: JavaScript
+// Level: Beginner
+
+/* const multi_line_messgae = `
+Name: Sayed
+Course: JavaScript
+Level: Beginner
+`;
+console.log(multi_line_messgae); */
+
+//Q3 : What will be the output of the following code?
+// const a = 5;
+// const b = 3;
+// console.log(`The sum of a and b is ${a + b}`);
+
+
+/* Output : The sum of a and b is 8 */
+
+//Q4 :  Given a function greet(name), how can you use it inside a template string to print Hello, Alice!?
+// function greet(name) {
+//   return `Hello, ${name}!`;
+// }
+
+/* const result = greet("Alice");
+console.log(result); */
+
+//Q5 : Given the object below, how can you use a template string to print:
+// Student John scored 90 in math.
+// const student = {
+//   name: "John",
+//   scores: {
+//     math: 90
+//   }
+// };
+
+/* console.log(`Student ${student.name} scored ${student.scores.math} in math`); */
+
+
+
