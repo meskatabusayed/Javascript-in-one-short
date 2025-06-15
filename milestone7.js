@@ -359,7 +359,7 @@ for (let [subject, score] of Object.entries(scores2)) {
 john_doe
 john@example.com */
 
-//# 37-2 : Template String , Arrow Function , spread Operator, 
+//# 37-2 : Template String , Arrow Function , spread Operator
 //*** 1.Template String
 
 //Q1 : What will be the output of the following code?
@@ -511,5 +511,81 @@ person.greet(); // Output: Hello, I am Alice
 //Q6: How can you combine the following two objects using the spread operator?
 // const obj1 = { a: 1, b: 2 };
 // const obj2 = { c: 3, d: 4 };
+
+
+//# 37-3 : Array Methods(Map , For Each , Filter, And Find)
+//*** 1. Map
+//Q1 : You are given the array:
+// const numbers = [1, 2, 3, 4];
+// Use the map() method to return a new array where each number is doubled.
+
+
+//Q2: Given the following array of objects:
+// const users = [
+//   { id: 1, name: "Alice" },
+//   { id: 2, name: "Bob" },
+//   { id: 3, name: "Charlie" }
+// ];
+// Use map() to create an array containing only the names.
+
+//Q3: Given the array:
+// const students = [
+//   { name: "John", marks: 70 },
+//   { name: "Jane", marks: 90 }
+// ];
+// Use map() to return a new array where each object includes a new field passed that is true if marks > 75, otherwise false.
+
+//Q4: You are given this array:
+// const items = ["apple", "banana", "cherry"];
+// Use map() to return a new array of strings in the format:
+// Item 1: apple, Item 2: banana, Item 3: cherry
+
+//Q5: Given the array:
+// const prices = [10, 20, 30];
+// Use map() to convert each number to a string with a dollar sign in front: ["$10", "$20", "$30"]
+
+
+//*** 2. For Each
+//Q1: 
+// const fruits = ["apple", "banana", "cherry"];
+// fruits.forEach(function(fruit, index) {
+//   console.log(index + ": " + fruit);
+// });
+// What will be the output of the above code?
+
+//Q2:
+// const numbers = [10, 20, 30];
+// let sum = 0;
+// numbers.forEach(function(num) {
+//   sum += num;
+// });
+// console.log(sum);
+// What will sum be after the forEach loop runs?
+
+//Q3 : 
+// const nums = [1, 2, 3, 4];
+// const result = nums.forEach(num => {
+//   return num * 2;
+// });
+// console.log(result);
+// What will be printed and why?
+
+//Q4 : 
+// const arr = [1, 2, 3];
+// arr.forEach((val, i, arr) => {
+//   arr[i] = val * 2;
+// });
+// console.log(arr);
+// What will arr contain after the loop?
+
+//Q5 : 
+// const names = ["John", "Jane", "Doe"];
+// names.forEach(name => {
+//   if (name === "Jane") return;
+//   console.log(name);
+// });
+// What will be printed and why doesn't return skip the iteration?
+
+//*** 3. Filter
 
 
